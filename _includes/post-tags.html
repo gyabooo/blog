@@ -1,0 +1,8 @@
+<div class="post-tags">
+  <span>タグ：</span>
+  {% for tag in include.post.tags %}
+  <a href="{{ site.baseurl }}/tags#{{ tag | slugize }}">
+    {{ tag }}
+  </a>
+  {% endfor %}
+</div>
